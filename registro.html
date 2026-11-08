@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de registro - CINECP</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    background-color: #070714;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .top-label {
+    color: #6b6b7a;
+    font-size: 13px;
+    margin-bottom: 8px;
+    margin-left: 2px;
+  }
+
+  .card {
+    background-color: #12212f;
+    border: 1px solid #8a7a2a;
+    border-radius: 10px;
+    padding: 32px 28px 28px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  }
+
+  .badge {
+    display: inline-block;
+    background-color: #a50e0e;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    color: #f5c518;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 22px;
+    letter-spacing: -0.2px;
+  }
+
+  label {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 7px;
+  }
+
+  .field {
+    margin-bottom: 16px;
+  }
+
+  input {
+    width: 100%;
+    background-color: #0a0f24;
+    border: 1px solid #2a3a55;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    padding: 11px 12px;
+    outline: none;
+  }
+
+  input:focus {
+    border-color: #f5c518;
+  }
+
+  .password-wrap {
+    position: relative;
+  }
+
+  .password-wrap input {
+    padding-right: 38px;
+  }
+
+  .eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #8a93a6;
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 100%;
+    background-color: #f5c518;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    padding: 12px;
+    cursor: pointer;
+    margin-top: 6px;
+  }
+
+  .btn:hover {
+    background-color: #ffd700;
+  }
+</style>
+</head>
+<body>
+
+  
+
+    <div class="card">
+      <span class="badge">CUENTA NUEVA</span>
+      <h1>Crea tu cuenta en CINECP</h1>
+
+      <form id="formRegistro">
+        <div class="field">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" required>
+        </div>
+
+        <div class="field">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" required>
+        </div>
+
+        <div class="field">
+          <label for="pass">Contraseña</label>
+          <input type="password" id="pass" required>
+        </div>
+
+        <div class="field">
+          <label for="pass2">Confirmar contraseña</label>
+          <div class="password-wrap">
+            <input type="password" id="pass2" required>
+            <button type="button" class="eye" 
+          </div>
+        </div>
+
+        <button type="submit" class="btn" id="botonregistro">CREAR CUENTA</button>
+      </form>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
